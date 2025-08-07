@@ -1,0 +1,282 @@
+
+body{
+    /* display: flex; */
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    color: white;
+    background-color:black;
+    /* flex-wrap: wrap; */
+}
+.main{
+    display: flex;
+    height: 100vh;
+   width: 100vw;
+    padding: .5rem;
+
+}
+.sidebar{
+    background-color: black;
+
+    width: 300px;
+    margin-right: .5rem;
+    border-radius: 1rem;
+
+    top: 0;
+    left: 0;
+    overflow: auto;
+  /* z-index: 10; */
+}
+.maincontaint{
+    background-color:#121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+    /* margin-left: 300px; */
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    height:70px ;
+    width: 100%;
+}
+.nav{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    border-radius: 1rem;
+    padding: .5rem;
+  
+}
+.nav-option{
+    line-height: 2.9rem;
+    /* padding: 0.5rem 0.75rem; */
+    opacity: 0.5;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.30rem;
+}
+.nav-option a{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: white;
+}
+ .library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: .5rem;
+     
+
+ }
+ .lib-option a{
+    text-decoration: none;
+    color: white;
+ }
+  .lib-option img{
+        height: 1.30rem;
+        width: 1.30rem;
+        margin-left: .5rem;
+  }
+.option{
+    display: flex;
+    justify-content: space-between;
+}
+.icon {
+    margin-top: 1.30rem;
+    font-size: 1.1rem;
+ 
+}
+.icon i{
+    margin-right: .7rem;
+    opacity: .5;
+}
+.icon i:hover{
+    opacity: 1;
+}
+.box{
+    height: 8rem;
+    background-color: rgb(31, 31, 31);
+    border-radius: 0.75rem;
+    padding: .75rem 1rem;
+    margin: .5rem 0 0.85rem 0;
+  
+}
+.box1{
+    margin-top: .1rem;
+    font-weight: 700;
+}
+.box2{
+    opacity: .9;
+    font-size: .75rem;
+}
+.badge{
+    background-color: white;
+    border-radius: 100px;
+    border: none;
+    padding: .5rem .6rem;
+    font-weight: 700;
+    margin-top: .5rem;
+    height: 2rem;
+    width: fit-content;
+
+}
+.sticky-nav{
+   background-color: #121212;
+   display: flex;
+   position: sticky;
+   top: 0;
+   justify-content: space-between;
+   padding-top: 1rem;
+   z-index: 11;
+}
+
+.forward-backward{
+   margin-left: .5rem;
+}
+.downlode button{
+   margin-right: 1rem;
+
+}
+.dark-badge{
+   background-color: black;
+   color: white;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{ 
+   display: flex;
+   flex-wrap: wrap;
+   border-radius: .5rem;
+}
+.card-container{ 
+    width: 150px;
+    background-color:rgb(23, 23, 23);
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.img-card img{
+    width: 100%;
+    border-radius: .5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.content{
+    font-size: .85rem;
+    opacity: .5;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: .2;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+ .album{
+    display: flex;
+   
+    width: 25%;
+ 
+ }
+ .player-control{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+ .player{
+    width: 50%;
+ background-color:black ;
+}
+ 
+ .player img{
+  height: 1rem;
+  opacity: .7;
+    margin-right: .95rem;
+}
+ .player img:hover{
+    opacity: 1;
+ }
+ 
+.control{
+    width: 25%;
+    background-color: rgb(0,0,0);
+}
+.playback input{
+   width: 70%;
+   appearance: none;
+   background-color: transparent;
+   cursor: pointer;
+
+}
+.playback input::-webkit-slider-runnable-track{
+    background-color: white;
+    border-radius: 100px;
+    height: .2rem;
+}
+.playback input::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: rgb(169, 26, 26);
+    border-radius: 50%;
+    margin-top: -6px;
+
+}
+.album-pic img{
+    height: 50px;
+   margin:.5rem;
+}
+.album-title{
+    font-size: .75rem;
+margin: 7px 0 4px 0;
+    font-weight: 600;
+   
+}
+.album-detail{
+    font-size:.55rem;
+    opacity: .5;
+}
+.album-item{
+    opacity: .5;
+    font-size: 1rem;
+    margin-right: 8rem;
+}
+.album-internl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   
+}
+.album-item i{
+    margin-right: .75rem;
+}
+@media(max-width:1079px){
+    #internal-hide{
+        display: none;
+    }
+}
+
