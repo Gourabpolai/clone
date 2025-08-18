@@ -158,13 +158,16 @@ body{
    flex-wrap: wrap;
    border-radius: .5rem;
 }
-.card-container{ 
+ .card-container{ 
     width: 150px;
-    background-color:rgb(23, 23, 23);
+
     padding: 1rem;
     border-radius: .5rem;
     margin-left: 1.5rem;
     margin-top: 1rem;
+}
+.card-container:hover{
+        background-color:rgb(23, 23, 23);
 }
 .img-card img{
     width: 100%;
