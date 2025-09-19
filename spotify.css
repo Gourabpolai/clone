@@ -209,6 +209,9 @@ body{
     align-items: center;
    
  }
+ .player-control #play-btn{
+       margin-right: 15px;
+ }
  .player{
     width: 50%;
  background-color:black ;
