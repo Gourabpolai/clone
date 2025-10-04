@@ -1,8 +1,9 @@
 // Songs list
 const songs = [
-  { title: "song1", artist: "Artist A", src: "music/song1.mp3", cover: "photo/card1img.jpeg" },
-  { title: "Song 2", artist: "Artist B", src: "music/song2.mp3", cover: "photo/card2img.jpeg" },
-  { title: "Song 3", artist: "Artist C", src: "music/song3.mp3", cover: "photo/card3img.jpeg" }
+  { title: "Teri Mere Kahaani", artist: "Artist A", src: "music/01 - GIB - Teri Mere Kahaani [DJMaza.Info] (1).mp3", cover: "photo/card1img.jpeg" },
+  { title: "India Waale", artist: "Artist B", src: "music/01 - HNY - India Waale [DJMaza.Info].mp3", cover: "photo/card2img.jpeg" },
+  { title: "Itna Tumhe", artist: "Artist C", src: "music/01 - Itna Tumhe - Machine [DJMaza.Life].mp3", cover: "photo/card3img.jpeg" },
+   { title: "Khamoshiyan", artist: "Artist A", src: "music/01 - Khamoshiyan - Khamoshiyan [DJMaza.Info].mp3", cover: "photo/card3img.jpeg" }
 ];
 
 let currentSongIndex = 0;
