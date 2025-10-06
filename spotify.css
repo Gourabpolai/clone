@@ -142,7 +142,6 @@ body{
 }
 .downlode button{
    margin-right: 1rem;
-
 }
 .dark-badge{
    background-color: black;
@@ -153,12 +152,20 @@ body{
         display: none;
     }
 }
+
+@media(max-width:727px){
+    .dark-badge{
+        display: none;
+    }
+}
 .card{ 
+    /* position: relative; */
    display: flex;
    flex-wrap: wrap;
    border-radius: .5rem;
 }
  .card-container{ 
+    position: relative;
     width: 150px;
 
     padding: 1rem;
@@ -168,7 +175,13 @@ body{
 }
 .card-container:hover{
         background-color:rgb(23, 23, 23);
+
 }
+
+.card-container:hover .play-button{
+    opacity: 1;
+}
+
 .img-card img{
     width: 100%;
     border-radius: .5rem;
@@ -207,11 +220,17 @@ body{
      display: flex;
     justify-content: center;
     align-items: center;
-   
+   margin-top: .7rem;
  }
  .player-control #play-btn{
-       margin-right: 15px;
+       margin-right: 24px;
  }
+
+ .player-control #play-btn:hover
+ {
+     transform: scale(1.09);
+ }
+
  .player{
     width: 50%;
  background-color:black ;
@@ -220,16 +239,63 @@ body{
  .player img{
   height: 1rem;
   opacity: .7;
-    margin-right: .95rem;
+    margin-right: 1.5rem;
 }
  .player img:hover{
     opacity: 1;
  }
  
-.control{
-    width: 25%;
-    background-color: rgb(0,0,0);
+
+
+.control {
+  width: 25%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1.5rem;
+  gap: 15px;
+  color: #b3b3b3;
 }
+
+.control i {
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.control i:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+/* Volume bar style */
+.volume-bar {
+  width: 90px;
+  cursor: pointer;
+  accent-color: #1db954;
+  background: transparent;
+}
+
+/* Make sure the range input looks good on all browsers */
+.volume-bar::-webkit-slider-runnable-track {
+  background-color: #b3b3b3;
+  border-radius: 100px;
+  height: .2rem;
+}
+
+.volume-bar::-webkit-slider-thumb {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: #1db954;
+  border-radius: 50%;
+  margin-top: -6px;
+
+}
+
+
 .playback input{
    width: 70%;
    appearance: none;
@@ -237,6 +303,7 @@ body{
    cursor: pointer;
 
 }
+
 .playback input::-webkit-slider-runnable-track{
     background-color: white;
     border-radius: 100px;
@@ -244,12 +311,16 @@ body{
 }
 .playback input::-webkit-slider-thumb{
     appearance: none;
-    height: 16px;
-    width: 16px;
-    background-color: rgb(169, 26, 26);
+    height: 15px;
+    width: 15px;
+    background-color:green;
     border-radius: 50%;
     margin-top: -6px;
 
+}
+.playback{
+    margin-top: .2rem;
+    margin-left: 3.5rem;
 }
 .album-pic img{
     height: 50px;
@@ -281,8 +352,70 @@ margin: 7px 0 4px 0;
     margin-right: .75rem;
 }
 @media(max-width:1079px){
-    #internal-hide{
+    .forward-hide{
         display: none;
     }
+}
+
+@media(max-width:1079px){
+    .backward-hide{
+        display: none;
+    }
+}
+
+@media(max-width:1079px){
+#right-hide{
+        display: none;
+    }
+}
+
+@media(max-width:633px){
+    #volume-hide{
+        display: none;
+    }
+}
+
+@media(max-width:1433px){
+    .album-item{
+        display: none;
+    }
+}
+
+@media(max-width:722px){
+    .album-pic{
+        display: none;
+    }
+}
+@media(max-width:722px){
+    .album-internl{
+        display: none;
+    }
+}
+
+@media(max-width:613px){
+    .player{
+      width: 100vw;
+    }
+}
+
+
+.play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  height: 45px;
+  width: 45px;
+  position:absolute;
+  top: 115px;
+right:20px ;
+ opacity: 0;
+ transition: all .2s ease-out;
+}
+
+.play-button:hover {
+  transform: scale(1.05);
+
 }
 
